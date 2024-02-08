@@ -193,6 +193,10 @@ img{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
+.text_area::placeholder{
+    color:rgba(46, 47, 66, 0.4);
+}
+
 .text_area:focus{
     border-color: #4D5AE5;
 }
@@ -270,19 +274,6 @@ img{
     left: 16px;
     top: 26px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -694,6 +685,7 @@ img{
 .footer_wrap{
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .footer_info_left{
@@ -730,6 +722,71 @@ img{
     display: flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer_form{
+    display: flex;
+    gap: 24px; 
+}
+
+.footer_form_text{
+    margin-bottom: 16px;
+    font-weight: 500; 
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.footer_form_input{
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.footer_form_input::placeholder{
+    color: #ffffff;
+}
+
+.footer_form_btn{
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border:none;
+    border-radius: 4px;
+}
+
+.footer_form_icon{
+    margin-left: 16px;
+    fill: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .address_list_item a:hover,
