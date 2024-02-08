@@ -43,6 +43,138 @@ img{
     display: block;
 }
 
+.back_drop {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+    padding: 24px;
+    width: 408px;
+    min-height: 584px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal_close_btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal_close_btn:hover,
+.modal_close_btn:focus{
+    background-color: #404bbf;
+    border: none;
+
+}
+
+.is_open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+.modal_close_btn:hover > .modal_close_icon,
+.modal_close_btn:focus > .modal_close_icon{
+    fill:#ffffff;
+}
+
+.modal_close_icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal_title{
+    margin-top: 72px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.modal_form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+.modal_form_label{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    gap: 4px;
+}
+.form_input{
+    width: 360px;
+    height: 40px;
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+}
+
+.modal_person_icon{
+    position: absolute;
+    top: 29px;
+    left: 16px;
+}
+
+.modal_phone_icon{
+    position: absolute;
+    left: 16px;
+    top: 26px;
+}
+
+.modal_email_icon{
+    position: absolute;
+    left: 16px;
+    top: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
