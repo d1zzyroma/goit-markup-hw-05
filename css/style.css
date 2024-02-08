@@ -158,7 +158,7 @@ img{
     
 }
 
-.form_input:focus > .modal_icon{
+.form_input:focus + .modal_icon{
     fill: #4D5AE5;
 }
 
@@ -219,6 +219,22 @@ img{
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+
+
+.check_box_input:checked + .span_icon{
+    background-color:#404bbf;
+    border: none;
+    fill:#F4F4FD;
+}
+
+.span_icon{
+
+}
+
+.span_a{
+    color:#4d5ae5;
+    text-decoration: underline;
 }
 
 .modal_icon{
