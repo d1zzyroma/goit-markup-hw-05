@@ -156,10 +156,17 @@ img{
     border-color: #4D5AE5;
 }
 
-.input_wrapper:hover > .modal_icon,
-.input_wrapper:focus > .modal_icon{
+
+.modal_icon:hover,
+.modal_icon:focus{
     fill: #4D5AE5;
 }
+
+
+ .input_wrapper:hover > .modal_icon,
+.input_wrapper:focus > .modal_icon{
+    fill: #4D5AE5;
+} 
 
 .form_section{
     margin-bottom: 8px;
