@@ -222,7 +222,7 @@ img{
 }
 
 
-.check_box_input:checked + .check_box_label .span_icon{
+.check_box_input:checked + .check_box_label .check_box_span{
     background-color:#404bbf;
     border: none;
     fill:#F4F4FD;
@@ -231,7 +231,7 @@ img{
 .form_btn{
     display: block;
     margin: 0 auto;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
