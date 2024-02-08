@@ -156,8 +156,8 @@ img{
     border-color: #4D5AE5;
 }
 
-.form_input:hover > .modal_icon,
-.form_input:focus > .modal_icon{
+.input_wrapper:hover > .modal_icon,
+.input_wrapper:focus > .modal_icon{
     fill: #4D5AE5;
 }
 
