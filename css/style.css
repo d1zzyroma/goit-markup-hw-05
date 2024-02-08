@@ -146,6 +146,10 @@ img{
     border-radius: 4px;
 }
 
+.form_section{
+    margin-bottom: 8px;
+}
+
 .modal_person_icon{
     position: absolute;
     top: 29px;
