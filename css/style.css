@@ -124,7 +124,6 @@ img{
 .modal_form{
     display: flex;
     flex-direction: column;
-    gap: 8px;
     margin: 0 auto;
 }
 
@@ -137,7 +136,8 @@ img{
     line-height: 117%;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    gap: 4px;
+    display: block;
+    margin-bottom: 4px;
 }
 .form_input{
     width: 360px;
