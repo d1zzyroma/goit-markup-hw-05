@@ -685,7 +685,6 @@ img{
 .footer_wrap{
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
 }
 
 .footer_info_left{
@@ -721,6 +720,10 @@ img{
     align-items: center;
     display: flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer_form_wrapper{
+    margin-left: 80px;
 }
 
 .footer_form{
