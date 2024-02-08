@@ -150,15 +150,32 @@ img{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.form_input:hover,
+.form_input:focus{
+    border-color: #4D5AE5;
+}
+
+.form_input:hover > .modal_icon,
+.form_input:focus > .modal_icon{
+    fill: #4D5AE5;
+}
+
 .form_section{
     margin-bottom: 8px;
+    
+}
+
+.input_wrapper{
     position: relative;
 }
 
-.modal_person_icon{
+.modal_icon{
     position: absolute;
-    top: 29px;
+    top: 50%;
     left: 16px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_phone_icon{
